@@ -23,6 +23,10 @@
             <TabItem Header="ListBox Examples" x:Name="listBoxExamples">
                 <local:ListBoxExamples />
             </TabItem>
+
+            <TabItem Header="ItemsControl Examples" x:Name="itemsControlExamples">
+                <local:ItemsControlExamples />
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>
