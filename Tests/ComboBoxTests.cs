@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace Tests
 {
@@ -13,7 +14,19 @@ namespace Tests
         [TestMethod]
         public void Test()
         {
-            Assert.IsTrue(true);
+            var tabBar = session.FindElementByClassName(nameof(TabControl));
+            var tabItems = tabBar.FindElementsByClassName(nameof(TabItem));
+
+            // ComboBox examples tab
+            tabItems[2].Click();
+
+            var comboBox = session.FindElementByClassName(nameof(ComboBox));
+            comboBox.Click();
+
+            var comboBoxItems = comboBox.FindElementsByClassName(nameof(ListBoxItem));
+
+            Assert.IsTrue(comboBoxItems.Any());
+            comboBoxItems.Last().Click();
         }
 
         [ClassInitialize]
