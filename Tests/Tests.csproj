@@ -72,6 +72,7 @@
     <Compile Include="ListBoxTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TabBarTests.cs" />
+    <Compile Include="TextBlockTests.cs" />
     <Compile Include="WpfAppSession.cs" />
   </ItemGroup>
   <ItemGroup>
