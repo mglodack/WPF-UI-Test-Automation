@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfTestAutomation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTestAutomation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl Grid.Row="0">
+            <TabItem Header="Button Examples" x:Name="buttonExamples">
+                <local:ButtonExamples />
+            </TabItem>
+
+            <TabItem Header="TextBlock Examples" x:Name="textBlockExamples">
+                <local:TextBlockExamples />
+            </TabItem>
+
+            <TabItem Header="ComboBox Examples" x:Name="comboBoxExamples">
+                <local:ComboBoxExamples />
+            </TabItem>
+
+            <TabItem Header="ListBox Examples" x:Name="listBoxExamples">
+                <local:ListBoxExamples />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
