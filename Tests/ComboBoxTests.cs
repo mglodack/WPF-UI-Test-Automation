@@ -26,7 +26,10 @@ namespace Tests
             var comboBoxItems = comboBox.FindElementsByClassName(nameof(ListBoxItem));
 
             Assert.IsTrue(comboBoxItems.Any());
-            comboBoxItems.Last().Click();
+            var lastItem = comboBoxItems.Last();
+            lastItem.Click();
+
+            Assert.AreEqual(comboBox.Text, lastItem.Text);
         }
 
         [ClassInitialize]
